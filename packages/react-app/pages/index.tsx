@@ -61,7 +61,7 @@ export default function Home() {
     };
 
     return (
-        <div className="mx-auto p-6 bg-blue-100 shadow-lg">
+        <div className="mx-auto p-6 bg-pink-100 shadow-lg">
             {address ? (
                 <>
                     <div className="grid grid-cols-1 gap-6">
@@ -80,7 +80,7 @@ export default function Home() {
                             className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                         />
                         {errorMessage && (
-                            <div className="text-red-600 text-sm">
+                            <div className="text-blue-800 text-sm">
                                 {errorMessage}
                             </div>
                         )}
