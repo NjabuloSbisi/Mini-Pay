@@ -11,7 +11,7 @@ const Layout: FC<Props> = ({ children, backgroundColor, contentAreaBackgroundCol
   return (
     <>
       <div
-        className={`layout ${backgroundColor ? `bg-${backgroundColor}` : 'bg-unique-blue'} overflow-hidden flex flex-col min-h-screen`}
+        className={`layout ${backgroundColor ? `bg-${backgroundColor}` : 'bg-pink-500'} overflow-hidden flex flex-col min-h-screen`}
       >
         <Header />
         <main
