@@ -1,21 +1,24 @@
 import { FC, ReactNode } from "react";
-import Masthead from "./Masthead"; 
+import Header from "./Header"; 
 
 interface Props {
   children: ReactNode;
-  backgroundColor?: string; 
+  backgroundColor?: string;
   contentAreaBackgroundColor?: string; 
-  className?: string; 
 }
 
-const Layout: FC<Props> = ({ children, backgroundColor, contentAreaBackgroundColor, className }) => {
+const Layout: FC<Props> = ({ children, backgroundColor, contentAreaBackgroundColor }) => {
   return (
     <>
       <div
-        className={`layout ${backgroundColor ? `bg-${backgroundColor}` : ''} overflow-hidden flex flex-col min-h-screen ${className}`}
+        className={`layout ${backgroundColor ? `bg-${backgroundColor}` : 'bg-unique-blue'} overflow-hidden flex flex-col min-h-screen`}
       >
-        <Masthead />
-        <main className={`content-area py-16 max-w-7xl mx-auto space-y-8 sm:px-6 lg:px-8 ${contentAreaBackgroundColor ? `bg-${contentAreaBackgroundColor}` : ''}`}>
+        <Header />
+        <main
+          className={`content-area py-16 max-w-7xl mx-auto space-y-8 sm:px-6 lg:px-8 ${
+            contentAreaBackgroundColor ? `bg-${contentAreaBackgroundColor}` : ''
+          }`}
+        >
           {children}
         </main>
       </div>
