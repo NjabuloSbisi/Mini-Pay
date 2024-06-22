@@ -106,10 +106,9 @@ export default function Home() {
                     )}
                 </>
             ) : (
-                <div class="connect-wallet-container flex items-center justify-center text-center text-xl font-semibold rounded-lg shadow-md">
-                    <span class="text-gray-700">Unlock the power of decentralized finance. Connect your wallet to experience the exciting world of Celo DApps.</span>
-                    <button class="connect-wallet-button ml-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md shadow-sm focus:outline-none">Connect Wallet</button>
-                </div>
+                <div className="animated-text text-center text-xl font-semibold text-gray-700">
+  Please connect your wallet to proceed.
+</div>
 
             )}
             {tx && (
