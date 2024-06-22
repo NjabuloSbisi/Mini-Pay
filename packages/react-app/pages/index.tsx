@@ -106,8 +106,8 @@ export default function Home() {
                     )}
                 </>
             ) : (
-                <div className="animated-text text-center text-xl font-semibold text-gray-700">
-  Please connect your wallet to proceed.
+                <div className="text-center text-xl font-semibold text-gray-700 animate-bounce">
+  Let's get started , Please Connect your Wallet.
 </div>
 
             )}
