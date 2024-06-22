@@ -87,7 +87,7 @@ export default function Home() {
                         <PrimaryButton
                             loading={signingLoading}
                             onClick={sendingCUSD}
-                            title="Send "
+                            title="Send cUSD"
                             widthFull
                         />
                     </div>
@@ -107,12 +107,12 @@ export default function Home() {
                 </>
             ) : (
                 <div className="text-center text-xl font-semibold text-gray-700">
-                   Let's get Started , Connect Your Wallet
+                    Please connect your wallet to proceed.
                 </div>
             )}
             {tx && (
-                <div className="mt-4 text-center text-lg font-bold">
-                    🔥Sent: {tx.transactionHash.substring(0, 6)}...
+                <div className="mt-4 text-center text-lg font-semibold">
+                    Tx Completed: {tx.transactionHash.substring(0, 6)}...
                     {tx.transactionHash.substring(tx.transactionHash.length - 6)}
                 </div>
             )}
