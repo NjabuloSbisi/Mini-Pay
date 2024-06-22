@@ -18,7 +18,7 @@ const publicClient = createPublicClient({
     transport: http(),
 });
 
-const cUSDTokenAddress = "0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1"; // Testnet
+const cUSDTokenAddress = "0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1"; 
 
 
 export const useWeb3 = () => {
@@ -79,7 +79,7 @@ export const useWeb3 = () => {
 
     const checkIfTransactionSucceeded = async (transactionHash: any) => {
         const receipt = await publicClient.getTransactionReceipt({ hash: transactionHash});
-        return receipt.status === "success";
+        return receipt.status === "success😎";
     };
  
 

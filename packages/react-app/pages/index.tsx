@@ -87,7 +87,7 @@ export default function Home() {
                         <PrimaryButton
                             loading={signingLoading}
                             onClick={sendingCUSD}
-                            title="Send cUSD"
+                            title="Send"
                             widthFull
                         />
                     </div>
