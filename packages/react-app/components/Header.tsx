@@ -38,13 +38,13 @@ export default function Header() {
                                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                                     <a
                                         href="#"
-                                        className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900"
+                                        className="inline-flex items-center border-b-2 border-red px-1 pt-1 text-sm font-medium text-gray-900"
                                     >
                                         📩💸
                                     </a>
                                 </div>
                             </div>
-                            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                            <div className="flex items-center left-2 sm:static sm:ml-auto sm:pr-6">
                                 {!hideConnectBtn && (
                                     <ConnectButton
                                         showBalance={{
