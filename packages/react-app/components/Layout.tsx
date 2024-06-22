@@ -1,21 +1,27 @@
 import { FC, ReactNode } from "react";
-import Header from "./Header";
+import Masthead from "./Masthead"; 
 
 interface Props {
-    children: ReactNode;
+  children: ReactNode;
+  backgroundColor?: string; 
+  contentAreaBackgroundColor?: string; 
+  className?: string; 
 }
-const Layout: FC<Props> = ({ children }) => {
-    return (
-        <>
-            <div className="bg-gypsum overflow-hidden flex flex-col min-h-screen">
-                <Header />
-                <div className="py-16 max-w-7xl mx-auto space-y-8 sm:px-6 lg:px-8">
-                    {children}
-                </div>
-               
-            </div>
-        </>
-    );
+
+const Layout: FC<Props> = ({ children, backgroundColor, contentAreaBackgroundColor, className }) => {
+  return (
+    <>
+      <div
+        className={`layout ${backgroundColor ? `bg-${backgroundColor}` : ''} overflow-hidden flex flex-col min-h-screen ${className}`}
+      >
+        <Masthead />
+        <main className={`content-area py-16 max-w-7xl mx-auto space-y-8 sm:px-6 lg:px-8 ${contentAreaBackgroundColor ? `bg-${contentAreaBackgroundColor}` : ''}`}>
+          {children}
+        </main>
+      </div>
+    </>
+  );
 };
 
 export default Layout;
+

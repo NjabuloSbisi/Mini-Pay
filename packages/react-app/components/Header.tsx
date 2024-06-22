@@ -40,7 +40,7 @@ export default function Header() {
                                         href="#"
                                         className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900"
                                     >
-                                        MyDapp
+                                        📩💸
                                     </a>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ export default function Header() {
                                 href="#"
                                 className="block border-l-4 border-red py-2 pl-3 pr-4 text-base font-medium text-blue"
                             >
-                                MyDapp
+                                
                             </Disclosure.Button>
                         </div>
                     </Disclosure.Panel>
