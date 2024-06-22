@@ -23,7 +23,7 @@ const PrimaryButton: React.FC<Props> = ({
   }, [disabled, loading]);
 
   const buttonClasses = useMemo(() => {
-    let classes = `${className} font-bold bg-indigo-500 rounded-2xl text-white py-3 flex justify-center items-center`;
+    let classes = `${className} font-bold bg-red-500 rounded-2xl text-white py-3 flex justify-center items-center`;
     classes += widthFull ? ' w-full' : ' px-4';
     return classes;
   }, [className, widthFull]);

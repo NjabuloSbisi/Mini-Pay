@@ -33,7 +33,7 @@ export default function Header() {
                                     )}
                                 </Disclosure.Button>
                             </div>
-                            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start bg-pink-500">
                               
                                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                                     <a
