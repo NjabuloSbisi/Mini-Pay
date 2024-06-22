@@ -106,7 +106,7 @@ export default function Home() {
                     )}
                 </>
             ) : (
-                <div className="text-center text-xl font-semibold text-gray-700">
+                <div className="text-center text-xl font-semibold text-pink-100">
                     
                 </div>
             )}
