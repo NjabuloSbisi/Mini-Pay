@@ -62,7 +62,7 @@ export default function Header() {
                             <Disclosure.Button
                                 as="a"
                                 href="#"
-                                className="block border-l-4 border-red py-2 pl-3 pr-4 text-base font-medium text-blue"
+                                className="border-l-4 border-red py-2 pl-3 pr-4 text-base font-medium text-blue animate-pulse"
                             >
                                 
                             </Disclosure.Button>
