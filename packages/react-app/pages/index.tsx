@@ -107,7 +107,7 @@ export default function Home() {
                 </>
             ) : (
                 <div className="text-center text-xl font-semibold text-gray-700">
-                    Please connect your wallet to proceed.
+                    
                 </div>
             )}
             {tx && (
